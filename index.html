@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franco Pantoja Advocacia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo"><img src="logo/logo.svg" alt="Franco Pantoja Advocacia"></a>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#areas">Áreas</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO / BANNER -->
+  <section id="home" class="hero">
+    <picture class="hero-bg">
+      <source media="(max-width: 768px)" srcset="banner/banner-mobile.jpg">
+      <img src="banner/banner.jpg" alt="Franco Pantoja Advocacia">
+    </picture>
+    <div class="container hero-content">
+      <h1 class="hero-title">Advocacia feita por pessoas, para pessoas</h1>
+      <p class="hero-text">
+        Acolhimento, transparência e respeito em cada atendimento.
+        Orientamos você antes que o problema aconteça.
+      </p>
+      <a href="https://wa.me/5591987570111" target="_blank" class="btn btn-primary btn-pulse">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Fale Conosco pelo WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ATALHOS RAPIDOS -->
+  <section class="atalhos">
+    <div class="container">
+      <h2 class="section-title">Como podemos ajudar?</h2>
+      <p class="section-subtitle">Escolha o assunto e responda algumas perguntas rápidas. Ao final, enviaremos tudo pelo WhatsApp.</p>
+      <p class="cards-hint">👆 Clique nos cards e conte sua situação para nós</p>
+      <div class="cards-grid">
+
+        <div class="card-atalho" data-flow="aposentadoria">
+          <div class="card-icon">
+            <img src="cards/aposentadoria.svg" alt="Aposentadoria" width="96" height="96">
+          </div>
+          <h3>Quero me Aposentar</h3>
+          <p>Aposentadoria rural, urbana e orientação previdenciária.</p>
+          <span class="card-arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#CEAE7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <div class="card-atalho" data-flow="criminal">
+          <div class="card-icon">
+            <img src="cards/criminal.svg" alt="Criminal" width="96" height="96">
+          </div>
+          <h3>Preciso de um Criminalista</h3>
+          <p>Defesa criminal, consultoria e acompanhamento processual.</p>
+          <span class="card-arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#CEAE7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <div class="card-atalho" data-flow="civil">
+          <div class="card-icon">
+            <img src="cards/civil.svg" alt="Civil" width="96" height="96">
+          </div>
+          <h3>Questões Civis</h3>
+          <p>Direito civil, contratos, família e obrigações.</p>
+          <span class="card-arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#CEAE7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+
+        <div class="card-atalho" data-flow="orientacao">
+          <div class="card-icon">
+            <img src="cards/outros.svg" alt="Orientação" width="96" height="96">
+          </div>
+          <h3>Orientação Geral</h3>
+          <p>Tire suas dúvidas sobre qualquer assunto jurídico.</p>
+          <span class="card-arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#CEAE7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-imagem">
+          <img src="perfil/sobre.png" alt="Escritório Franco Pantoja Advocacia" class="sobre-img">
+        </div>
+        <div class="sobre-texto">
+          <h2 class="section-title">Sobre Nós</h2>
+          <p>Acreditamos que a advocacia vai muito além de processos. Acreditamos em ouvir histórias, orientar com sinceridade e tratar cada pessoa com respeito.</p>
+          <p>Conhecemos de perto a realidade de quem vive do campo, de quem acorda cedo todos os dias e constrói a própria história com esforço. Por isso, não trabalhamos com falsas promessas. Trabalhamos com verdade.</p>
+          <p>Nosso compromisso é orientar, acolher e ajudar pessoas a se prepararem antes que o problema aconteça. Porque aposentadoria não é apenas um benefício. É dignidade. É reconhecimento. É história de vida.</p>
+          <div class="sobre-valores">
+            <div class="valor-item">
+              <span class="valor-num">+4 Anos</span>
+              <span class="valor-label">de experiência</span>
+            </div>
+            <div class="valor-item">
+              <span class="valor-num">500+</span>
+              <span class="valor-label">Clientes atendidos</span>
+            </div>
+            <div class="valor-item">
+              <span class="valor-num">100%</span>
+              <span class="valor-label">Atendimento humanizado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREAS DE ATUACAO -->
+  <section id="areas" class="areas">
+    <div class="container">
+      <h2 class="section-title">Áreas de Atuação</h2>
+      <p class="section-subtitle">Oferecemos assessoria jurídica completa nas seguintes áreas</p>
+      <div class="areas-grid">
+        <div class="area-card">
+          <div class="area-card-img">
+            <img src="cards/previdenciario.png" alt="Direito Previdenciário">
+          </div>
+          <ul>
+            <li>Aposentadoria Rural</li>
+            <li>Aposentadoria Urbana</li>
+            <li>Auxílio-Doença</li>
+            <li>Salário-Maternidade</li>
+          </ul>
+        </div>
+        <div class="area-card">
+          <div class="area-card-img">
+            <img src="cards/criminal.png" alt="Direito Criminal">
+          </div>
+          <ul>
+            <li>Defesa Criminal</li>
+            <li>Consultoria Jurídica</li>
+            <li>Acompanhamento Processual</li>
+            <li>Tribunal do Júri</li>
+          </ul>
+        </div>
+        <div class="area-card">
+          <div class="area-card-img">
+            <img src="cards/civil.png" alt="Direito Civil">
+          </div>
+          <ul>
+            <li>Direito de Família</li>
+            <li>Contratos</li>
+            <li>Obrigações</li>
+            <li>Responsabilidade Civil</li>
+          </ul>
+        </div>
+        <div class="area-card">
+          <div class="area-card-img">
+            <img src="cards/outros.png" alt="Outros Serviços">
+          </div>
+          <ul>
+            <li>Consultoria Jurídica</li>
+            <li>Orientação Preventiva</li>
+            <li>Regularização de Documentos</li>
+            <li>Demandas Extrajudiciais</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPE -->
+  <section id="equipe" class="equipe">
+    <div class="container">
+      <h2 class="section-title">Nossa Equipe</h2>
+      <p class="section-subtitle">Conheça os profissionais que fazem da Franco Pantoja uma advocacia feita com dedicação</p>
+      <div class="equipe-grid">
+        <div class="membro-card">
+          <div class="membro-foto">
+            <img src="perfil/giomax.png" alt="Dr. Giomax Pantoja" class="membro-img">
+          </div>
+          <h3>Dr. Giomax Pantoja</h3>
+          <span class="membro-oab">OAB/PA 34.388</span>
+          <span class="membro-cargo">Advogado Previdenciarista e Criminalista</span>
+          <p class="membro-desc">Dedicado à defesa dos direitos dos trabalhadores rurais e urbanos, com atuação em direito previdenciário e criminal.</p>
+        </div>
+        <div class="membro-card">
+          <div class="membro-foto">
+            <img src="perfil/tecia.png" alt="Dra. Tecia Franco" class="membro-img">
+          </div>
+          <h3>Dra. Tecia Franco</h3>
+          <span class="membro-oab">OAB/PA 38.130</span>
+          <span class="membro-cargo">Advogada Civilista e Previdenciarista</span>
+          <p class="membro-desc">Especialista em direito civil e previdenciário, comprometida com um atendimento humanizado e transparente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2 class="section-title">Entre em Contato</h2>
+      <p class="section-subtitle">Estamos prontos para atender você</p>
+      <div class="contato-grid">
+        <div class="contato-info">
+          <div class="info-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5 7 2 12 2C17 2 21 5 21 10Z" stroke="#CEAE7C" stroke-width="2" fill="none"/>
+              <circle cx="12" cy="10" r="3" stroke="#CEAE7C" stroke-width="2" fill="none"/>
+            </svg>
+            <div>
+              <strong>Endereço</strong>
+              <p>Aurora do Pará - PA<br>Rua São Francisco, Centro, s/n<br>Próx. ao Galpão do Agricultor</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M22 16.92V20C22 20.6 21.6 21 21 21C10.5 21 3 13.5 3 3C3 2.4 3.4 2 4 2H7C7.6 2 8 2.4 8 3C8 4.2 8.2 5.3 8.5 6.3C8.6 6.6 8.5 6.9 8.3 7.1L6.1 9.3C8.1 13 11 15.9 14.7 17.9L16.9 15.7C17.1 15.5 17.4 15.4 17.7 15.5C18.7 15.8 19.8 16 21 16C21.6 16 22 16.4 22 17V16.92Z" stroke="#CEAE7C" stroke-width="2" fill="none" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <strong>Telefone / WhatsApp</strong>
+              <p><a href="https://wa.me/5591987570111" target="_blank">(91) 98757-0111</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="4" width="20" height="16" rx="2" stroke="#CEAE7C" stroke-width="2" fill="none"/>
+              <path d="M22 6L12 13L2 6" stroke="#CEAE7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <div>
+              <strong>E-mail</strong>
+              <p><a href="mailto:francopantoja.adv@gmail.com">francopantoja.adv@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="2" width="20" height="20" rx="4" stroke="#CEAE7C" stroke-width="2" fill="none"/>
+              <circle cx="12" cy="12" r="5" stroke="#CEAE7C" stroke-width="2" fill="none"/>
+              <circle cx="18" cy="6" r="1.5" fill="#CEAE7C"/>
+            </svg>
+            <div>
+              <strong>Instagram</strong>
+              <p><a href="https://www.instagram.com/francopantoja_advocacia/" target="_blank">@francopantoja_advocacia</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="contato-form">
+          <form id="formContato">
+            <input type="text" placeholder="Seu nome" id="formNome" required>
+            <input type="tel" placeholder="Seu telefone" id="formTelefone" required>
+            <input type="email" placeholder="Seu e-mail" id="formEmail">
+            <textarea placeholder="Sua mensagem" rows="5" id="formMensagem" required></textarea>
+            <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+      <div class="mapa" id="mapa"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="logo/logo.svg" alt="Franco Pantoja Advocacia" class="footer-logo">
+        <p>Advocacia feito por pessoas, para pessoas.</p>
+      </div>
+      <div class="footer-contato">
+        <p><strong>Endereço:</strong> Aurora do Pará - PA, Rua São Francisco, Centro</p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5591987570111" target="_blank">(91) 98757-0111</a></p>
+        <p><strong>E-mail:</strong> <a href="mailto:francopantoja.adv@gmail.com">francopantoja.adv@gmail.com</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/francopantoja_advocacia/" target="_blank">@francopantoja_advocacia</a></p>
+      </div>
+      <div class="footer-links">
+        <h4>Atendimento</h4>
+        <p>Seg a Sex: 8h às 18h</p>
+        <p>Aurora do Para - PA</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Franco Pantoja Advocacia. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-container" id="modalContainer">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <line x1="6" y1="6" x2="18" y2="18" stroke="#5D503E" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18" y1="6" x2="6" y2="18" stroke="#5D503E" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div class="modal-body">
+        <div class="modal-step active" id="stepWelcome">
+          <div class="step-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <circle cx="28" cy="28" r="26" stroke="#CEAE7C" stroke-width="2" fill="none"/>
+              <path d="M18 28L26 36L38 22" stroke="#CEAE7C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <h3>Olá, seja bem-vindo(a)!</h3>
+          <p>Responda algumas perguntas rápidas para facilitar o nosso atendimento.</p>
+          <button class="btn btn-primary btn-start" id="btnStart">Começar</button>
+        </div>
+        <div class="modal-step" id="stepQuestion">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <p class="question-label" id="questionLabel">Pergunta 1 de 4</p>
+          <h3 class="question-text" id="questionText"></h3>
+          <input type="text" class="question-input" id="questionInput" placeholder="Digite sua resposta..." autocomplete="off">
+          <div class="question-actions">
+            <button class="btn btn-secondary" id="btnPrev" style="visibility:hidden;">Voltar</button>
+            <button class="btn btn-primary" id="btnNext">Próximo</button>
+          </div>
+        </div>
+        <div class="modal-step" id="stepFinish">
+          <div class="step-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <circle cx="28" cy="28" r="26" stroke="#CEAE7C" stroke-width="2" fill="none"/>
+              <path d="M18 28L26 36L38 22" stroke="#CEAE7C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <h3>Pronto!</h3>
+          <p>Suas respostas foram registradas. Clique no botão abaixo para enviar pelo WhatsApp.</p>
+          <button class="btn btn-primary btn-whatsapp" id="btnSendWhatsApp">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;margin-right:8px;">
+              <path d="M17 5.5C17 7.4 15.4 9 13.5 9H11V7H12.5C13.3 7 14 6.3 14 5.5C14 4.7 13.3 4 12.5 4H10V17H7.5C6.7 17 6 16.3 6 15.5C6 14.7 6.7 14 7.5 14H9V12H6.5C4.6 12 3 10.4 3 8.5C3 6.6 4.6 5 6.5 5H10V3H12.5C15 3 17 5 17 5.5Z" fill="white"/>
+            </svg>
+            Enviar para WhatsApp
+          </button>
+          <button class="btn btn-secondary btn-close-modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="floating-buttons">
+    <a href="https://www.instagram.com/francopantoja_advocacia/" target="_blank" class="float-btn float-instagram" aria-label="Instagram">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+        <rect x="2" y="2" width="20" height="20" rx="4" stroke="white" stroke-width="2" fill="none"/>
+        <circle cx="12" cy="12" r="5" stroke="white" stroke-width="2" fill="none"/>
+        <circle cx="18" cy="6" r="1.5" fill="white"/>
+      </svg>
+    </a>
+    <a href="https://wa.me/5591987570111" target="_blank" class="float-btn float-whatsapp" aria-label="WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
