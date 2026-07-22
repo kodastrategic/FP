@@ -10,6 +10,24 @@
         'Já contribuiu para o INSS alguma vez?'
       ]
     },
+    bpc: {
+      title: 'Quero solicitar o BPC',
+      questions: [
+        'Qual seu nome completo?',
+        'Qual sua idade?',
+        'A pessoa tem alguma deficiência física ou mental?',
+        'Qual a renda familiar mensal?'
+      ]
+    },
+    'salario-maternidade': {
+      title: 'Salário-Maternidade',
+      questions: [
+        'Qual seu nome completo?',
+        'Qual sua idade?',
+        'Você ainda está gestante?',
+        'Já trabalhou de carteira assinada?'
+      ]
+    },
     criminal: {
       title: 'Preciso de um Criminalista',
       questions: [
