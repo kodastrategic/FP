@@ -273,7 +273,7 @@
       }).addTo(map);
 
       L.marker([-2.1330085, -47.5601637]).addTo(map)
-        .bindPopup('Franco Pantoja Advocacia<br>Rua Sao Francisco, Centro<br>Aurora do Para - PA')
+        .bindPopup('Franco Pantoja Advocacia<br>Rua Sao Francisco, Centro<br>Aurora do Para - PA<br><a href="https://www.google.com/maps/place/Franco+Pantoja+Advocacia/@-2.1330222,-47.5603643,19.95z/data=!4m6!3m5!1s0x92ba9b0068a04f0b:0xa913a1cbeddb3527!8m2!3d-2.1330085!4d-47.5601637!16s%2Fg%2F11lzp25n38" target="_blank" style="color:#CEAE7C;font-weight:600;">Abrir no Google Maps</a>')
         .openPopup();
     } else {
       mapDiv.innerHTML = '<p style="color:var(--text-light);">Mapa carregado via OpenStreetMap</p>';
