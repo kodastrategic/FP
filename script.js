@@ -229,6 +229,7 @@
   cards.forEach(function (card) {
     card.addEventListener('click', function () {
       var flow = this.getAttribute('data-flow');
+      if (typeof window.va === 'function') window.va('event', { name: 'click_card_' + flow });
       openModal();
       // small delay for animation, then start
       setTimeout(function () {
@@ -248,7 +249,10 @@
 
   btnNext.addEventListener('click', nextQuestion);
   btnPrev.addEventListener('click', prevQuestion);
-  btnSend.addEventListener('click', sendToWhatsApp);
+  btnSend.addEventListener('click', function () {
+    if (typeof window.va === 'function') window.va('event', { name: 'click_whatsapp_modal' });
+    sendToWhatsApp();
+  });
 
   closeBtn.addEventListener('click', closeModal);
   overlay.addEventListener('click', function (e) {
@@ -272,6 +276,7 @@
     }
 
     var text = 'Olá, meu nome é ' + nome + '. Meu telefone: ' + tel + '. ' + msg;
+    if (typeof window.va === 'function') window.va('event', { name: 'click_whatsapp_form' });
     var url = 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(text);
     window.open(url, '_blank');
   });
