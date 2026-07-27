@@ -225,16 +225,28 @@
     }
   });
 
+  // ============ WHATSAPP MESSAGES ============
+  var WHATSAPP_MSGS = {
+    aposentadoria: 'Olá, quero me aposentar, como funciona?',
+    bpc: 'Olá, quero solicitar o BPC, como funciona?',
+    'salario-maternidade': 'Olá, quero saber sobre o Salário-Maternidade, como funciona?',
+    criminal: 'Olá, preciso de um criminalista, como funciona?',
+    civil: 'Olá, tenho questões civis, como funciona?',
+    orientacao: 'Olá, gostaria de uma orientação geral, como funciona?'
+  };
+
+  function openWhatsApp(msg) {
+    var url = 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(msg);
+    window.open(url, '_blank');
+  }
+
   // ============ EVENTOS DOS CARDS ============
   cards.forEach(function (card) {
     card.addEventListener('click', function () {
       var flow = this.getAttribute('data-flow');
       fbq('trackCustom', 'ClickCard', { flow: flow });
-      openModal();
-      // small delay for animation, then start
-      setTimeout(function () {
-        startFlow(flow);
-      }, 300);
+      var msg = WHATSAPP_MSGS[flow] || 'Olá, gostaria de mais informações.';
+      openWhatsApp(msg);
     });
   });
 

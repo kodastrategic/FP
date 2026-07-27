@@ -126,6 +126,23 @@ img {
   box-shadow: 0 4px 15px rgba(206, 174, 124, 0.4);
 }
 
+.btn-hero-whatsapp {
+  animation: heroGreenPulse 2s ease-in-out infinite;
+}
+
+@keyframes heroGreenPulse {
+  0%, 100% {
+    background: var(--gold);
+    border-color: var(--gold);
+    box-shadow: 0 4px 15px rgba(206, 174, 124, 0.4);
+  }
+  50% {
+    background: #26C030;
+    border-color: #26C030;
+    box-shadow: 0 4px 25px rgba(38, 192, 48, 0.5);
+  }
+}
+
 .btn-secondary {
   background: transparent;
   color: var(--dark);
