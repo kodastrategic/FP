@@ -127,6 +127,7 @@ img {
 }
 
 .btn-hero-whatsapp {
+  color: var(--white);
   animation: heroGreenPulse 2s ease-in-out infinite;
 }
 
